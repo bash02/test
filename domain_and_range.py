@@ -1,24 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import matplotlib.pyplot as plt
 import numpy as np
 from sympy import Symbol, S, exp, log, pi, sqrt, sin, tan
 from sympy.sets import Interval
 from sympy.calculus.util import continuous_domain, function_range
 
-
-# In[2]:
-
-
 x = Symbol('x')
-
-
-# In[3]:
-
 
 #functions
 a = sqrt(1 - x**2)
@@ -33,21 +19,6 @@ i = 3*x/sqrt(1 - x**3)
 j = 1/(x + 2)
 k = i + j
 
-
-# In[4]:
-
-
 continuous_domain(d, x, S.Reals)
 
-
-# In[5]:
-
-
 function_range(d, x, S.Reals)
-
-
-# In[ ]:
-
-
-
-
